@@ -1,0 +1,15 @@
+- Algorithms with Javascript 
+- Fundamentals of Javascript
+- Topics
+    - Algorithms
+    - Measuring Performance
+    - Time and Space Complexity
+    - Big O notation
+    - Math Algorithms
+    - Sort
+    - Search
+    - Misc. algorithms & problem solving
+
+- It might seems hard & that is because it is hard
+- Have a pen and paper and trace the execution of code with a sample input
+

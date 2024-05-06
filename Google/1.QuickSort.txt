@@ -1,0 +1,33 @@
+- O(nlogn)
+
+function quickSort(arr, left = 0, right = arr.length - 1) {
+    if (left < right) {
+        // Partition the array and get the index of the pivot
+        let pivotIndex = partition(arr, left, right);
+
+        // Sort the elements before and after the partition
+        quickSort(arr, left, pivotIndex - 1);
+        quickSort(arr, pivotIndex + 1, right);
+    }
+    return arr;
+}
+
+function partition(arr, left, right) {
+    let pivot = arr[right]; // Pivot chosen from the end of the array segment
+    let i = left - 1; // Pointer for the last element of the smaller part
+
+    // Iterate over each element, except the pivot
+    for (let j = left; j < right; j++) {
+        // If current element is smaller than or equal to pivot, swap it with the element at i+1
+        if (arr[j] <= pivot) {
+            i++; // Move the boundary of the smaller part
+            [arr[i], arr[j]] = [arr[j], arr[i]]; // Swap elements
+        }
+    }
+    // Swap the pivot with the first element right of the smaller part
+    [arr[i + 1], arr[right]] = [arr[right], arr[i + 1]];
+    return i + 1; // Return the pivot index
+}
+
+// Example usage:
+console.log(quickSort([3, 6, 8, 10, 1, 2, 1]));

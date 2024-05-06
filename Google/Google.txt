@@ -1,0 +1,29 @@
+1. Arrays
+- push() - Adds one or more elements to the end of an array and returns the new length of the array.
+- pop() - Removes the last element from an array and returns that element.
+- shift() - Removes the first element from an array and returns that element.
+- unshift() - Adds one or more elements to the beginning of an array and returns the new length.
+- slice() - Returns a shallow copy of a portion of an array into a new array object.
+- splice() - Changes the contents of an array by removing or replacing existing elements and/or adding new - elements.
+- map() - Creates a new array with the results of calling a provided function on every element in the calling - array.
+- filter() - Creates a new array with all elements that pass the test implemented by the provided function.
+
+2. Objects: 
+- Object.keys() - Returns an array of a given object's own enumerable property names.
+- Object.values() - Returns an array of a given object's own enumerable property values.
+- Object.entries() - Returns an array of a given object's own enumerable string-keyed property [key, value] pairs.
+- Object.assign() - Copies the values of all enumerable own properties from one or more source objects to a target object.
+
+3. Set
+- add() - Adds a new element with a specified value to the Set.
+- delete() - Removes a specified value from the Set.
+- has() - Returns a boolean indicating whether an element with the specified value exists in the Set or not.
+- clear() - Removes all elements from the Set.
+
+4. Map
+- set() - Sets the value for the key in the Map object. Returns the Map object.
+- get() - Gets the value for the key in the Map object.
+- has() - Returns a boolean asserting whether a value has been associated to the key in the Map object or not.
+- delete() - Deletes the key/value pair with the specified key from the Map object.
+- clear() - Removes all key/value pairs from the Map object.
+
